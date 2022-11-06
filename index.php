@@ -10,9 +10,10 @@ var_dump($redCar);
 try {
     $redCar->start();
 } catch (Exception $e) {
+    echo $e->getMessage();
     $redCar->setHasParkBrake(false);
 } finally {
-    echo 'Ma voiture roule comme un donut !';
+    echo ' Ma voiture roule comme un donut !';
 }
 
 echo "<br>";
